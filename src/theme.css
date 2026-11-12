@@ -71,8 +71,8 @@ html[data-theme="light"]{color-scheme:light;background:#f4f6f8;color:#202d3a}
 .light .source-panel>.text-link{border-color:#e0e7ed}
 .light footer{border-color:#dce3e9;color:#62778a}
 .light .footer-brand,.light .footer-brand>span,.light footer button{color:#5e7386}
-.light .auto-update-bar{background:#edf7f2;border-color:#cfe5d9;color:#34715b}
-.light .auto-update-bar>span:last-child{color:#537a68}
+.light .auto-update-bar{background:transparent;color:#6b7a87}
+.light .auto-update-bar>span:last-child{color:#72808c}
 .light .toast{background:#f0faf4;border-color:#bedac9;color:#285d45;box-shadow:0 10px 35px #2b49341c}
 .light .modal-overlay{background:#30425655}
 .light .modal{background:#fff;border-color:#d4dfe8;box-shadow:0 24px 80px #223b5030}
