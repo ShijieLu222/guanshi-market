@@ -4,7 +4,7 @@ const inFlight=new Map();
 const memory=new Map();
 function json(data,status=200){return new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}})}
 async function quote(symbol,kind,ctx,url){
- const key=kind+symbol,ttl=kind==='metal'?30000:symbol==='CNY=X'?30000:15000;
+ const key=kind+symbol,ttl=kind==='metal'?30000:symbol==='CNY=X'?15000:symbol==='KRW=X'?30000:5000;
  const cached=memory.get(key);if(cached&&Date.now()<cached.until)return cached.data;
  if(inFlight.has(key))return inFlight.get(key);
  const promise=(async()=>{
