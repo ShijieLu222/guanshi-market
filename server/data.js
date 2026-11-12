@@ -1,5 +1,5 @@
 import {STOCKS,isFiniteNumber} from '../src/instruments.js';
-export const ALLOWED=new Set([...STOCKS.map(s=>s.symbol),'CNY=X','KRW=X']);
+export const ALLOWED=new Set([...STOCKS.map(s=>s.symbol),'CNY=X','KRW=X','^NDX']);
 const positive=x=>isFiniteNumber(x)&&x>0;
 export function normalizeChart(data,symbol,now=Date.now()){
  const result=data?.chart?.result?.[0],m=result?.meta;
@@ -64,4 +64,9 @@ export async function completeStock(symbol){
  }
  if(base)return {...base,regularPrice:base.price,regularQuoteAt:base.quoteAt,session:'常规',sessionKey:'regularMarket',extendedUnavailable:true,changeBasis:'相对前收盘',marketCap:null,points:base.points};
  throw Error('行情暂时不可用');
+}
+
+export async function indexQuote(){
+ const q=await completeStock('^NDX');
+ return {...q,assetType:'index',unit:'点',extendedUnavailable:false,delayMinutes:q.declaredDelayMinutes>0?q.declaredDelayMinutes:null,latencyLabel:'公开指数 · 延迟未保证'};
 }

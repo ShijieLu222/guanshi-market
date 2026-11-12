@@ -1,5 +1,5 @@
 import html from '../work-generated/page.html';
-import {ALLOWED,completeStock,metal} from './data.js';
+import {ALLOWED,completeStock,metal,indexQuote} from './data.js';
 const memory=new Map();
 function json(data,status=200){return new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}})}
 async function quote(symbol,kind,ctx,url){
@@ -7,7 +7,7 @@ async function quote(symbol,kind,ctx,url){
  const cached=memory.get(key);if(cached&&Date.now()<cached.until)return cached.data;
  // Cache completed data only. A promise started by another Worker request can
  // stop progressing when its client disconnects; reusing it blocks all retries.
-  const data=await(kind==='metal'?metal(symbol):completeStock(symbol));
+  const data=await(kind==='metal'?metal(symbol):symbol==='^NDX'?indexQuote():completeStock(symbol));
   const validMs=kind==='metal'?Math.max(1000,Math.min(ttl,Date.parse(data.quoteAt)+30000-Date.now())):ttl;
   memory.set(key,{data,until:Date.now()+validMs});
 
