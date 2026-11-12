@@ -1,0 +1,89 @@
+:root{color-scheme:dark}
+html[data-theme="light"]{color-scheme:light;background:#f4f6f8;color:#202d3a}
+.app{min-height:100vh}
+.theme-toggle{display:flex;align-items:center;justify-content:center;gap:7px;min-height:34px;padding:7px 11px;border:1px solid #38434b;border-radius:7px;background:#1b242b;color:#c9d2da;font-size:11px;white-space:nowrap}
+.theme-toggle:hover{background:#2b363f}
+.app.light{--muted:#667789;--border:#dce3e9;--panel:#fff;--up:#c8394c;--down:#08765c;--gold:#84601e;background:#f4f6f8;color:#202d3a}
+.app.light.western{--up:#08765c;--down:#c8394c}
+.light button:hover{color:inherit}
+.light .topbar{background:#fff;border-color:#dce3e9}
+.light .brand-mark,.light .avatar{background:#f7f0df;border-color:#e7d9ba;color:#856526}
+.light .brand-en{color:#6b7884;border-color:#dce3e9}
+.light .topbar nav{color:#617183}
+.light .topbar nav a span,.light .section-heading h2>span,.light .mini-tag{background:#eaf0f5;color:#53697b}
+.light .timezone,.light .timezone b{color:#617183}
+.light .theme-toggle,.light .refresh{background:#fff;border-color:#ced9e2;color:#43576b}
+.light .theme-toggle:hover,.light .refresh:hover{background:#edf2f6}
+.light h1{color:#1d2b39}
+.light .eyebrow,.light .page-heading p,.light .section-heading p{color:#657689}
+.light .connection{color:#29765c}
+.light .metal-card{background:linear-gradient(120deg,#fff8e9,#fffdf8);border-color:#e5d5b3;box-shadow:0 3px 14px #243b5305}
+.light .metal-emblem{background:#f4e7c8;border-color:#d9c18b;color:#8b641f}
+.light .metal-top h3>span,.light .metal-top p,.light .metal-fresh,.light .metal-price>span:not(.live-price){color:#78653e}
+.light .metal-price{color:#80601f}
+.light .unit-badge{background:#fff8e9;border-color:#ddcfad;color:#7f682f}
+.light .metal-detail{border-color:#e8dfce}
+.light .metal-detail span,.light .metal-foot{color:#687783}
+.light .metal-detail strong{color:#344554}
+.light .metal-art{opacity:.17}
+.light .metal-card.silver{background:linear-gradient(120deg,#edf3f9,#fff);border-color:#d2deea}
+.light .silver .metal-emblem{background:#e1eaf3;border-color:#b6c8db;color:#45627f}
+.light .silver .metal-price{color:#344f6b}
+.light .silver .metal-top h3>span,.light .silver .metal-top p,.light .silver .metal-fresh,.light .silver .metal-price>span:not(.live-price){color:#5d7288}
+.light .silver .unit-badge{background:#f4f8fc;border-color:#cad8e5;color:#526d86}
+.light .silver .metal-detail{border-color:#dae4ed}
+.light .index-card{background:linear-gradient(120deg,#eef3ff,#fff);border-color:#cbd8f0}
+.light .index-card .metal-emblem{background:#e6edfd;border-color:#b8cbed;color:#3b63a6}
+.light .index-card .metal-price{color:#304f80}
+.light .index-card .metal-top h3>span,.light .index-card .metal-top p,.light .index-card .metal-price>span:not(.live-price),.light .index-change small{color:#5e7293}
+.light .index-card .unit-badge{background:#f3f6fd;border-color:#c7d4eb;color:#506c98}
+.light .fx-card,.light .stock-card,.light .heat-panel,.light .source-panel{background:#fff;border-color:#dce3e9;box-shadow:0 3px 14px #243b5305}
+.light .stock-card:hover{background:#fbfcfe;border-color:#a9bacb;box-shadow:0 4px 16px #243b530c}
+.light .stock-card.drop-target{border-color:var(--gold)}
+.light .card-eyebrow,.light .pulse-row b,.light .source-panel b{color:#425b70}
+.light .fx-label,.light .fx-label>span:last-child,.light .fx-price>span,.light .fx-card>p,.light .pulse-row{color:#63778a}
+.light .conversion-note,.light .conversion-note>button{color:#667689}
+.light .view-switch,.light .search{background:#fff;border-color:#d3dfe7}
+.light .view-switch button{color:#6a7e8f}
+.light .view-switch button.selected{color:#80601f;background:#f3ecdc}
+.light .filter-tabs button{color:#627486}
+.light .filter-tabs button.chosen{color:#80601f;background:#f3ecdc}
+.light .search input{color:#263c50}
+.light .search input::placeholder{color:#738394}
+.light .stock-identity>span,.light .stock-footer>span:last-child,.light .status,.light .stock-footer,.light .session-reference,.light .session-reference span:last-child{color:#627789}
+.light .stock-identity i,.light .reorder-controls{color:#7a8c9b}
+.light .stock-price-row strong>small{color:#667a8b}
+.light .stock-logo{border-color:#dce3e9;filter:brightness(.75) saturate(1.15)}
+.light .status .tiny-dot{color:#278164}
+.light .neutral{color:#607385}
+.light .warn{color:#946113!important}
+.light .empty-chart{color:#73889b;background:repeating-linear-gradient(0deg,transparent,transparent 19px,#dce4ec66 20px)}
+.light .watch-footer,.light .watch-footer>button,.light .aside-description,.light .breadth small,.light .heat-note,.light .aside-bottom,.light .aside-bottom>span{color:#62778a}
+.light .breadth-bar{background:#e5ebf0}
+.light .cap-heatmap{background:#fff}
+.light .cap-cell{box-shadow:inset 0 0 0 1.5px #fff;color:#203c3a}
+.light .cap-cell>small{opacity:.85}
+.light .cap-cell:hover{filter:brightness(.97)}
+.light .cap-empty,.light .cap-missing{color:#687c8e}
+.light .heat-legend i{background:linear-gradient(90deg,var(--down),#e1e7ec,var(--up))}
+.light .color-toggle,.light .color-toggle>span:last-child{color:#586f80;border-color:#e0e7ed}
+.light .source-panel p,.light .source-panel>div:not(:first-child){color:#637689}
+.light .source-panel>.text-link{border-color:#e0e7ed}
+.light footer{border-color:#dce3e9;color:#62778a}
+.light .footer-brand,.light .footer-brand>span,.light footer button{color:#5e7386}
+.light .auto-update-bar{background:#edf7f2;border-color:#cfe5d9;color:#34715b}
+.light .auto-update-bar>span:last-child{color:#537a68}
+.light .toast{background:#f0faf4;border-color:#bedac9;color:#285d45;box-shadow:0 10px 35px #2b49341c}
+.light .modal-overlay{background:#30425655}
+.light .modal{background:#fff;border-color:#d4dfe8;box-shadow:0 24px 80px #223b5030}
+.light .modal .close,.light .modal>p,.light .info-item p,.light .detail-modal h2 small{color:#5e7385}
+.light .info-item{border-color:#e0e7ed}
+.light .info-item h3{color:#80601f}
+.light .info-item a{color:#42698d}
+.light .diagnostics>div,.light .diagnostics small,.light .detail-metrics span,.light .chart-caption{color:#60798c}
+.light .diagnostics b{color:#344f63}
+.light .quote-source{color:#60798c!important}
+.light .detail-chart{background:repeating-linear-gradient(0deg,transparent,transparent 49px,#dce4ec99 50px)}
+.light .detail-metrics{border-color:#dce3e9}
+.light ::selection{background:#e8d8b2;color:#202d3a}
+@media(max-width:600px){.theme-toggle{padding:7px;min-width:32px;min-height:32px;gap:5px;font-size:10px}.top-right{gap:8px}.top-right .avatar{display:none}}
