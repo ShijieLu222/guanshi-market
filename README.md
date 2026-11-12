@@ -22,7 +22,7 @@ npm run dev
 - 黄金、白银：Gold API 的 XAU/XAG 国际现货 USD/金衡盎司，源约每30秒更新。
 - 人民币克价：USD/oz × USD/CNY ÷ 31.1034768。非金店零售报价。汇率时间独立显示。
 - Tech 100：纳斯达克 100 现货指数（^NDX），单位为点，每10秒请求；非交易时段显示最新可得点位与报价时间。不使用期货或 CFD 替代。
-- 13只股票：NVDA、SPCX、000660.KS、SNDK、MU、WDC、AMD、INTC、AAPL、GOOGL、MSFT、META、AMZN。
+- 15只股票：NVDA、SPCX、000660.KS、SNDK、MU、WDC、AMD、INTC、AAPL、GOOGL、MSFT、META、AMZN、TSLA、LITE。
 - Yahoo chart 提供真实分时点；公开行情页中的结构化 JSON 提供带时间的常规、盘前、盘后、隔夜价格，以及公司总市值。只解析目标证券，不执行远端脚本。
 - 主报价采用时间最新的有效报价。扩展时段涨跌相对最近常规收盘；常规涨跌相对前收盘。隔夜价格不等同于某券商实时可成交买卖价。
 - 分时线包含盘前、常规、盘后，不包含隔夜；页面明确分开显示曲线与主报价的时段。

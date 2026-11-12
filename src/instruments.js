@@ -12,6 +12,8 @@ export const STOCKS = [
   {symbol:'MSFT',name:'微软',en:'Microsoft',logo:'⊞',color:'#75c6ac',sector:'科技',market:'NASDAQ'},
   {symbol:'META',name:'Meta',en:'Meta Platforms',logo:'∞',color:'#6d9fff',sector:'科技',market:'NASDAQ'},
   {symbol:'AMZN',name:'亚马逊',en:'Amazon',logo:'a',color:'#e8ac60',sector:'科技',market:'NASDAQ'},
+  {symbol:'TSLA',name:'特斯拉',en:'Tesla',logo:'T',color:'#e35b66',sector:'科技',market:'NASDAQ'},
+  {symbol:'LITE',name:'Lumentum',en:'Lumentum Holdings',logo:'L',color:'#b18be9',sector:'算力',market:'NASDAQ'},
 ];
 export const OUNCE_GRAMS=31.1034768;
 export const isFiniteNumber=x=>typeof x==='number'&&Number.isFinite(x);
